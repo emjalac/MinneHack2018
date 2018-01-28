@@ -14,10 +14,10 @@
 <div class="navbar">
 	<a href="home.html">Home</a>
 	<a href="help.html">Find a Physician</a>
-  	<a href="profile.html" style="background: #4e5059; color: white; border: 4px solid white; border-radius: 25px; padding: 10px 12px">Profile ⇒</a>
+  	<a href="profile.html">Profile ⇒</a>
   	<a href="history.html">History</a>
     <a href="health.html">Health</a>
-    <a href="treatment.html">Treatment</a>
+    <a href="treatment.html" style="background: #4e5059; color: white; border: 4px solid white; border-radius: 25px; padding: 10px 12px">Treatment</a>
 </div>
 
 <div class="settings">
@@ -29,30 +29,35 @@
 </div>
 
 <div class="main">
-	<div class="sidebar">
-		<div class="profile-image">
-			<img src="../images/anon_icon.jpg" alt="User icon">
+	<div class="body">
+		<div class="text">
+			<b>Your Regimen:</b>
 		</div>
-		<div class="profile-description">
-			<div class="text">
-				Jane Doe
-				<br><br>
-				Sport:<br> softball<br><br>
-				Location:<br> Minneapolis, MN<br><br>
-				<b>Bio:</b><br>
-
-			</div>
-		</div>
-		<div class="text" style="position: absolute; margin-top: 10px; text-align: center">
-			<a href="editprofile.html" style="color: white">Edit profile</a>
 	</div>
-	<div class="text" style="position: absolute; margin-top: 40px; text-align: center">
-			<a href="addphysician.html" style="color: white">Add physician</a>
+	<div class="messagebox" style="position: absolute; margin-top: 46px; margin-left: 600px">
+		<div class="text">
+			<b>Messages from your physicians:</b>
+		</div>
+	</div>
+	<div class="messagebox" style="position: absolute; margin-top: 341px; margin-left: 600px">
+		<div class="text">
+			<b>Send instant message to your physician:</b>
+			<br><br>
+			<form action="" method="get" target="_blank">
+				Message:<br>
+				<textarea rows="2" cols="25"></textarea>
+			</form><br>
+			<form action="" method="get" target="_blank">
+				Send to (email):<br>
+				<input type="text" name="email">
+			</form><br>
+		</div>
 	</div>
 </div>
 
 <div class="footer">
 </div>
+
 
 
 </html>
