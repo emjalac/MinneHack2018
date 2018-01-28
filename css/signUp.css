@@ -1,0 +1,116 @@
+h1, h4 {
+  font-family: Poppins-Bold;
+  color: #333333;
+  text-align: center;
+  width: 100%;
+}
+
+label {
+  font-family: Poppins-Medium;
+  font-size: 20px;
+}
+
+input, textarea {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+}   
+
+.names, select{
+  outline: none;
+  border: none;
+  display: block;
+  color: #666666;
+
+  background: #e6e6e6;
+  height: 30px;
+  border-radius: 25px;
+  padding: 0 25px 0 25px;
+}
+
+.required:after {
+  content: " *";
+}
+
+.names:focus {
+  border-color: transparent !important;
+}
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+.names:focus::-webkit-input-placeholder { color:transparent; }
+.names:focus:-moz-placeholder { color:transparent; }
+.names:focus::-moz-placeholder { color:transparent; }
+.names:focus:-ms-input-placeholder { color:transparent; }
+
+.names::-webkit-input-placeholder { color: #999999; }
+.names:-moz-placeholder { color: #999999; }
+.names::-moz-placeholder { color: #999999; }
+.names:-ms-input-placeholder { color: #999999; }
+
+body {
+  margin: 0 auto;
+}
+
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #8298ff;
+  background: -webkit-linear-gradient(right, #8298ff, #8DC26F);
+  background: -moz-linear-gradient(right, #8298ff, #8DC26F);
+  background: -o-linear-gradient(right, #8298ff, #8DC26F);
+  background: linear-gradient(to left, #8298ff, #8DC26F);
+}
+.form {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.signUpform {
+    padding: 0 10px 30px 60px;
+}
+
+.done {
+	margin: 0 auto; width: 180px;
+	border-radius: 12px;
+	font-size: 30px;
+	font-family: Poppins-Medium;
+	background-color: #e7e7e7; 
+	color: black;
+}
+
+.done:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+

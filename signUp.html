@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/signUp.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<h1>Sign Up</h1>
+			<h4>Please fill in this form to create an account.</h4>
+			<form class="signUpform" method="post" action="home.html">
+				<p>
+					<label>* First Name:
+					<input class="names" name = "fname" placeholder="Enter your first name" type = "text" size = "25" id="fname" maxlength = "30" required>
+					</label>
+				</p>
+				<p>
+					<label>* Last Name:
+					<input class="names" name = "lname" placeholder="Enter your last name" type = "text" size = "25" id="lname" maxlength = "30" required>
+					</label>
+				</p>
+				<p>
+					<label>* Age:
+					<input class="names" name = "age" type = "number" id="age" max="100" min="1" required>
+					</label>
+				</p>
+				<p>
+					<label>* Race:
+					<select name="race" required>
+						<option value="None selected">Please select below</option>
+						<option value="white">White</option>
+						<option value="black">Black or African American</option>
+						<option value="native">American Indian or Alaska Native</option>
+						<option value="asian">Asian</option>
+						<option value="havaii">Native Hawaiian or Other Pacific Islander</option>
+						<option value="latino">Hispanic or Latino</option>
+					</select>
+					</label>
+				</p>
+				<p>
+					<label>Ethnicity:
+					<input class="names" name = "ethn" placeholder="Enter your ethnicity" type = "text" size = "25" id="ethn">
+					</label>
+				</p>
+				<p>
+					<label>* Sexual Identity:
+					<select name="si" required>
+						<option value="None selected">Please select below</option>
+						<option value="male">Male</option>
+						<option value="fem">Female</option>
+						<option value="other">Other</option>
+					</select>
+					</label>
+				</p>
+				<p>
+					<label>Pronoun:
+					<select name="pronoun">
+						<option value="None selected">Please select below</option>
+						<option value="he">He</option>
+						<option value="she">She</option>
+						<option value="other">Other</option>
+					</select>
+					</label>
+				</p>
+				<p>
+					<label>Have you served in the military?<br>
+					  <input type="radio" name="gender" value="Yes"> Yes
+					  <input type="radio" name="gender" value="No"> No
+					  <input type="radio" name="gender" value="No answer"> No answer
+					</label>
+				</p>
+				<p>
+					<label>Marital Status:
+					<select name="marSt">
+						<option value="None selected">Please select below</option>
+						<option value="single">Single</option>
+						<option value="divorced">Divorced</option>
+						<option value="widow">Widowed</option>
+						<option value="partnered">Partnered</option>
+					</select>
+					</label>
+				</p>		
+				<p>
+					<label>Are you on any medication?
+					<textarea name="medication" placeholder="List medication that you are currently taking" rows="3" maxlength="200" cols="35"></textarea>
+					</label>
+				</p>
+				<p>
+					<label>Address:
+					<textarea name="address" rows="3" maxlength="200" cols="35"></textarea>
+					</label>
+				</p>
+				<p>
+					<label>Occupation:
+					<input class="names" name = "occupation" type = "text" size = "25" id="occupation">
+					</label>
+				</p>
+				<p>
+					<label>Work Address:
+					<textarea name="waddress" rows="3" maxlength="200" cols="35"></textarea>
+					</label>
+				</p>
+				<p>
+					<label>Education History:
+					<textarea name="edHist" rows="3" maxlength="200" cols="35"></textarea>
+					</label>
+				</p>
+				<!-- submit and reset insert buttons for submitting -->
+				<!-- and clearing the form's contents				-->
+				<p>
+				<input class="done" type="submit" value="Submit">
+				</button>
+				</p>
+			</form>
+		</div>
+	</div>
+<!--===============================================================================================-->	
+	<script src="JS/login.js"></script>
+
+</body>
+</html>
