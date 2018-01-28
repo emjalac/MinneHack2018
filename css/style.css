@@ -32,7 +32,7 @@
     position:fixed;
     top: 0;
     right: 0;
-    width: 8%;
+    width: 14%;
     height: 46px;
 }
 
@@ -130,6 +130,29 @@
     left: 70px;
     width: 500px;
     height: 300px;
+}
+
+.home {
+  display: block;
+  position: relative;
+  background-color: white;
+  border-radius: 25px;
+  color: #4e5059;
+  top: 50px;
+  left: 70px;
+  width: 500px;
+  height: 500px;
+}
+
+.home-image {
+    overflow:hidden;
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    top: 100px
+    width: 200px;
+    height: 200px;
 }
 
 .history {
@@ -328,7 +351,7 @@
   margin: 40px 0;
 }
 /* reset css */
-/* https://meyerweb.com/eric/tools/css/reset/ 
+/* https://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -342,8 +365,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -354,7 +377,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
     display: block;
 }
@@ -378,7 +401,7 @@ table {
 }
 
 /* style css */
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -403,9 +426,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-schedule {
@@ -984,5 +1007,3 @@ Main Components
   opacity: 1;
   visibility: visible;
 }
-
-
