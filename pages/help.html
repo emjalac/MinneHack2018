@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Find Doctor</title>
+<title>Find a Physician</title>
 <link rel = "stylesheet" type = "text/css" href = "../css/style.css">
 <meta name="description" content="Website">
 <meta name="keywords" content="sports health communication">
@@ -17,11 +17,41 @@
     		<a href="health.html">Health</a>
   		</div>
 	</div>
- 	<a href="help.html">Find Doctor</a>
+ 	<a href="help.html">Find a Physician</a>
  	<div class="background">
 	</div>
 </div>
 
+<div class="body">
+	<div class="text">
+		Find a sports clinic in your area.
+	</div>
+	<br>
+	<div class="form">
+		<form action="" method="get" target="_blank">
+			Enter zip code:<br>
+			<input type="text" name="zipcode">
+		</form>
+		<br>
+		<button type="submit">Search map</button>
+	</div>
+</div>
 
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+    <div id="map"></div>
+    
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 41.2524, lng: -95.9980},
+          zoom: 3,
+          mapTypeId: 'roadmap'
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoG7OgbjIaEVzyltzlrKqF4B3e-SdV3H8&libraries=places&callback=initMap"
+         async defer></script>
 
 </html>

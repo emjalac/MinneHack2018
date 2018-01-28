@@ -1,7 +1,7 @@
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #000;
+    background-color: #fff;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     left: 0;
@@ -13,7 +13,7 @@
 .navbar a {
     float: left;
     display: block;
-    color: #fff;
+    color: #4e5059;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -21,13 +21,13 @@
 
 /* Change background on mouse-over */
 .navbar a:hover {
-    background: #8298ff;
-    color: black;
+    background: #4e5059;
+    color: white;
 }
 
 .background {
     overflow: hidden;
-    background-color: #f4f6ff;
+    background-color: #8298ff;
     position: fixed;
     top: 1;
     left: 0;
@@ -38,14 +38,14 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    background: #000;
+    background: #fff;
 }
 
 .dropdown-content {
     display: none;
     overflow: hidden;
-    background: black;
-    color: white;
+    background: white;
+    color: #4e5059;
     top: 0;
     left: 0
     width: 100%;
@@ -65,3 +65,122 @@
 /*.main {
     margin-top: 50px;
 }*/
+
+.body {
+    display: block;
+    position: fixed;
+    background-color: white;
+    border-radius: 25px;
+    color: #4e5059;
+    top: 100px;
+    left: 70px;
+    width: 500px;
+    height: 500px;
+}
+
+.form {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.text {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+
+    position: fixed;
+    border-radius: 25px;
+    top: 80px;
+    left: 670px;
+    width: 600px;
+    height: 500px;
+
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+
+
+
+
+
+
