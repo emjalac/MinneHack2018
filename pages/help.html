@@ -38,27 +38,74 @@
 		</div>
 		<br>
 		<div class="form">
-			<form action="" method="get" target="_blank">
-				Enter zip code:<br>
-				<input type="text" name="zipcode">
+			<form id="zip" action="" >
+				Enter zip code:<input type="text" name="zip"><br><br>
+				<input type="button" onclick="submitFunction()" value="Search map">
 			</form>
-			<br>
-			<button type="submit">Search map</button>
+		<br>
+		<script>
+	   	function submitFunction() {
+			document.getElementById(zip).submit();
+		}
+		</script>
 		</div>
 	</div>
+
 	<div id="map">
 
 	    <script>
-	      function initMap() {
-	        var map = new google.maps.Map(document.getElementById('map'), {
+		var map;
+		var infoWindow;
+		var service;
+	    function initMap() { 
+			var pyrmont = new google.maps.LatLng(41.2524, -95.9980);  
+			map = new google.maps.Map(document.getElementById("map"), {
 	          center: {lat: 41.2524, lng: -95.9980},
 	          zoom: 3,
 	          mapTypeId: 'roadmap'
 	        });
+
+			infoWindow = new google.maps.InfoWindow();
+			service = new google.maps.places.PlacesService(map);
+			var request = {
+				location : pyrmont,
+				radius : '10',
+				query : 'physiotherapist'
+		    };
+		    service.textSearch(request, callback);
 	      }
+
+		  function callback(results, status) {
+			  if (status !== google.maps.places.PlacesServiceStatus.OK) {
+				  console.error(status);
+				  return;
+			  }
+			  for (var i = 0, result; result = results[i]; i++) {
+				addMarker(result);
+			  }
+		  }
+		function addMarker(place) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          var request = {placeId: place.place_id};
+
+          service.getDetails(request, function(result, status) {
+            if (status !== google.maps.places.PlacesServiceStatus.OK) {
+              console.error(status);
+              return;
+            }
+            infoWindow.setContent(result.name);
+            infoWindow.open(map, marker);
+          });
+        });
+      }
 	    </script>
 
-	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoG7OgbjIaEVzyltzlrKqF4B3e-SdV3H8&libraries=places&callback=initMap"
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoG7OgbjIaEVzyltzlrKqF4B3e-SdV3H8&libraries=places,visualization&callback=initMap"
 	         async defer></script>
 	</div>
 
